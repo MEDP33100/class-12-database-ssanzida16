@@ -9,7 +9,8 @@ console.log('📦 app.js loaded');
 
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://ssanzida16:nipu11218@cluster0.bqunx6j.mongodb.net/studentApp?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://ssanzida16:nipu11218@cluster0.bqunyuo.mongodb.net/sample_mflix?retryWrites=true&w=majority&appName=Cluster0')
+
 
 
 .then(() => console.log('✅ MongoDB connected'))
@@ -20,6 +21,8 @@ mongoose.connect('mongodb+srv://ssanzida16:nipu11218@cluster0.bqunx6j.mongodb.ne
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var commentsRouter = require('./routes/comments');
+
 
 var app = express();
 
@@ -35,6 +38,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/comments', commentsRouter); // 👈 add this
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
