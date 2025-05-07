@@ -1,12 +1,18 @@
-<h1>Latest Comments</h1>
+<h2>💄 Latest Makeup Reviews 💄 </h2>
+
 <ul>
   {{#each comments}}
-    <li>
-      <strong>{{name}}</strong> ({{email}})<br/>
-      {{text}}<br/>
+    <li class="comment-card">
+      <h3>{{product}}</h3>
+      <p><strong>{{name}}</strong> ({{email}})</p>
+      <p>{{text}}</p>
       <em>{{date}}</em>
     </li>
   {{/each}}
 </ul>
+<a href="/comments/new" class="floating-btn">💬 Leave a Review</a>
+
+
+
 
 

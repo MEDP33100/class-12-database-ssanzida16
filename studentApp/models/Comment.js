@@ -1,4 +1,3 @@
-// models/Comment.js
 const mongoose = require('mongoose');
 
 const commentSchema = new mongoose.Schema({
@@ -10,4 +9,3 @@ const commentSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model('Comment', commentSchema, 'comments');
-// 'comments' matches the collection name in Atlas
