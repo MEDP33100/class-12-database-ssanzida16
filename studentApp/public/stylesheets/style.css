@@ -1,0 +1,82 @@
+/* Background and base styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('/images/background.png');
+  background-repeat: repeat;
+  background-size: 200px;
+  background-color: #fff0f6;
+  margin: 0;
+  padding: 2rem;
+  color: #333;
+}
+
+/* Page header */
+h1, h2 {
+  text-align: center;
+  color: #d63384;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+/* Container for the comments */
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Each comment card */
+.comment-card {
+  background-color: white;
+  border: 3px solid #ffc0cb;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 20px rgba(255, 192, 203, 0.25);
+}
+
+/* Product title */
+.comment-card h3 {
+  margin-top: 0;
+  color: #c71585;
+  font-size: 1.25rem;
+}
+
+/* Reviewer name and email */
+.comment-card strong {
+  color: #555;
+  font-size: 1rem;
+}
+
+.comment-card p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #444;
+}
+
+/* Date */
+.comment-card em {
+  font-size: 0.85rem;
+  color: #888;
+  display: block;
+  margin-top: 0.5rem;
+}
+.floating-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #d63384;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.floating-btn:hover {
+  background-color: #b82f6d;
+}
